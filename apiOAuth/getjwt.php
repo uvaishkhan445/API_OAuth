@@ -18,7 +18,7 @@ function generateJWT(array $payload, string $secret_key, string $algorithm): str
     $jwt = JWT::encode($payload, $secret_key, $algorithm);
     return $jwt;
 }
-
+////testing methods
 $secret_key = $config['jwt_secret'];
 $payload = [
     "iss" => "https://example.com",
